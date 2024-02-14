@@ -2,10 +2,12 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const ejs = require("ejs");
 const path = require("path");
-
+const mongoose = require("mongoose");
 const app = express();
 const port = 5000;
 
+
+const db = mongoose.connect("")
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({
   service: "gmail",
